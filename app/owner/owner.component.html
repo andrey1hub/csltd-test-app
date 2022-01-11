@@ -4,7 +4,7 @@
       <button type="button" class="btn btn-outline-secondary" routerLink="">Назад</button>
     </div>
     <div class="row">
-      <div class="col-6">
+      <div class="col">
         <div class="row mb-1">
           <div class="col-4 pt-2">Фамилия</div>
           <div class="col-8">
@@ -31,11 +31,11 @@
     <h3>Автомобили</h3>
     <div class="container-xl">
       <div class="row mb-1">
-        <div class="col-2 pe-0"><strong>Номер</strong></div>
+        <div class="col-3 pe-0"><strong>Номер</strong></div>
         <div class="col-3 pe-0"><strong>Марка</strong></div>
         <div class="col-3 pe-0"><strong>Модель</strong></div>
         <div class="col-2 pe-0"><strong>Год</strong></div>
-        <div class="col-2 pe-0">&nbsp;</div>
+        <div class="col-1 pe-0">&nbsp;</div>
       </div>
       <app-car *ngFor="let car of owner.cars; let index = index" [index]="index" [viewMode]="viewMode" [data]="car" [carIdCheckData]="carIdCheck" (statusChange)="processCarStatus($event)" (deleteRequest)="deleteCar($event)"></app-car>
       <div class="pt-2 pb-3">

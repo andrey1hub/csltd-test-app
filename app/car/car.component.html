@@ -1,28 +1,28 @@
 <form [formGroup]="form">
   <div class="row mb-1">
-    <div class="col-2 pe-0">
+    <div class="col-3 pe-0">
       <input type="text" class="form-control" [class.is-invalid]="form.controls.id.invalid || !carIdIsUnique" formControlName="id"
         [ngStyle]="{ display: !viewMode ? 'block' : 'none' }">
       <span [ngStyle]="{ display: viewMode ? 'block' : 'none' }">{{ form.controls.id.value }}</span>
     </div>
-    <div class="col-3 pe-0">
+    <div class="col-3 ps-1 pe-0">
       <input type="text" class="form-control" [class.is-invalid]="form.controls.manufacturer.invalid"
         formControlName="manufacturer" [ngStyle]="{ display: !viewMode ? 'block' : 'none' }">
       <span [ngStyle]="{ display: viewMode ? 'block' : 'none' }">{{ form.controls.manufacturer.value }}</span>
     </div>
-    <div class="col-3 pe-0">
+    <div class="col-3 ps-1 pe-0">
       <input type="text" class="form-control" [class.is-invalid]="form.controls.model.invalid" formControlName="model"
         [ngStyle]="{ display: !viewMode ? 'block' : 'none' }">
       <span [ngStyle]="{ display: viewMode ? 'block' : 'none' }">{{ form.controls.model.value }}</span>
     </div>
-    <div class="col-2 pe-0">
+    <div class="col-2 ps-1 pe-0">
       <select class="form-select" formControlName="year" [ngStyle]="{ display: !viewMode ? 'block' : 'none' }">
         <option *ngFor="let year of years" [ngValue]="year" value="{{ year }}">{{ year }}</option>
       </select>
       <span [ngStyle]="{ display: viewMode ? 'block' : 'none' }">{{ form.controls.year.value }}</span>
     </div>
-    <div class="col-2 pe-0 d-grid gap-2">
-      <button type="button" class="btn btn-danger" (click)="deleteCar()" [ngStyle]="{ display: !viewMode ? 'block' : 'none' }">Удалить</button>
+    <div class="col-1 ps-1 pe-0 d-grid gap-2">
+      <button type="button" class="btn btn-danger fw-bold" (click)="deleteCar()" [ngStyle]="{ display: !viewMode ? 'block' : 'none' }">&#10005;</button>
     </div>
   </div>
 </form>
