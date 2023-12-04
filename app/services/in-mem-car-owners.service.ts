@@ -13,7 +13,7 @@ export class InMemCarOwnersService implements InMemoryDbService {
       owners: [
         {
           id: 1,
-          surname: 'Иванов',
+          surname: 'Иваненко',
           name: 'Иван',
           patronymic: 'Иванович',
           cars: [
@@ -27,7 +27,7 @@ export class InMemCarOwnersService implements InMemoryDbService {
         },
         {
           id: 2,
-          surname: 'Алексеев',
+          surname: 'Алексеенко',
           name: 'Алексей',
           patronymic: 'Алексеевич',
           cars: [
@@ -41,7 +41,7 @@ export class InMemCarOwnersService implements InMemoryDbService {
         },
         {
           id: 3,
-          surname: 'Васильев',
+          surname: 'Василенко',
           name: 'Василий',
           patronymic: 'Васильевич',
           cars: [
@@ -55,7 +55,7 @@ export class InMemCarOwnersService implements InMemoryDbService {
         },
         {
           id: 4,
-          surname: 'Борисов',
+          surname: 'Борисенко',
           name: 'Борис',
           patronymic: 'Борисович',
           cars: [
@@ -69,7 +69,7 @@ export class InMemCarOwnersService implements InMemoryDbService {
         },
         {
           id: 5,
-          surname: 'Иванова',
+          surname: 'Иваненко',
           name: 'Мария',
           patronymic: 'Ивановна',
           cars: [
@@ -83,7 +83,7 @@ export class InMemCarOwnersService implements InMemoryDbService {
         },
         {
           id: 6,
-          surname: 'Алексеева',
+          surname: 'Алексеенко',
           name: 'Юлия',
           patronymic: 'Алексеевна',
           cars: [
@@ -97,7 +97,7 @@ export class InMemCarOwnersService implements InMemoryDbService {
         },
         {
           id: 7,
-          surname: 'Васильева',
+          surname: 'Василенко',
           name: 'Наталья',
           patronymic: 'Васильевна',
           cars: [
@@ -111,7 +111,7 @@ export class InMemCarOwnersService implements InMemoryDbService {
         },
         {
           id: 8,
-          surname: 'Борисова',
+          surname: 'Борисенко',
           name: 'Екатерина',
           patronymic: 'Борисовна',
           cars: [
